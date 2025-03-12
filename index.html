@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <!--styles  -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="bg">
+    <img src="images/bg-desktop-dark.jpg" alt="bg" id="bg-img">
+    <div class="bottom"><p>Press Enter to add your todo</p></div>
+  </div>
+
+  <div class="container">
+    <!-- header -->
+      <header>
+        <h1>Todo</h1>
+        <span id="toggle"><img src="images/icon-sun.svg" alt="toggle" id="toggle-img"></span>
+      </header>
+      <!-- task form -->
+      <div class="task-form">
+        <!-- custom check box -->
+          <div class="custom-check"><span></span></div>
+
+        <input type="text" id="task-input" placeholder="Create a new todo...">
+      </div>
+
+      <!-- controller -->
+      <div class="controller">
+        <!-- tasks -->
+            <div class="tasks">
+            </div>
+
+        <div class="controller-btn">
+              <!-- Add dynamic number --> 
+            <div class="items-left">
+              <span id="items-left"></span>
+              items left
+            </div>
+            <ul>
+              <li id="all-tasks" class="active">All</li>
+              <li id="active-tasks">Active </li>
+              <li id="completed-tasks">Completed</li>
+            </ul>
+            <span id="clearAll">Clear Completed</span>
+        </div>
+    </div>
+  </div>
+
+  <script src="js/tasks.js" type="module"></script>
+</body>
+</html>
